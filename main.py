@@ -48,4 +48,8 @@ def check_data(phone: str):
     if address:
         return JSONResponse(content={"address": address})
     else:
-        return JSONResponse(content={"message": "Address not found"}, status_code=404)
+        return JSONResponse(content={"message": "Адрес не найден, проверьте телефон на корректность"}, status_code=404)
+
+
+
+
